@@ -5,12 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
-
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Junior Developer Portfolio</title>
+        <title>Junior Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -22,7 +21,7 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Conocimientos</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
@@ -60,8 +59,8 @@
 
                     <div>
                         <h2 class="about__subtitle">Me llamo Pablo Agustin Cardozo</h2>
-                        <span class="about__profession">Tecnico en Informática</span>
-                        <p class="about__text">Cuento con mas de 2 años de experiencia en el mundo de la tecnología. Me especializo en el área de Soporte Técnico IT, la asesoría tecnica y asistencia en el mantenimiento de ordenadores. Tengo un alto nivel de disciplina y responsabilidad.</p>
+                        <span class="about__profession">Técnico en Informática</span>
+                        <p class="about__text">Cuento con mas de 2 años de experiencia en el mundo de la tecnología. Me especializo en el área de Soporte Técnico IT, la asesoría técnica y asistencia en el mantenimiento de ordenadores. Tengo un alto nivel de disciplina y responsabilidad.</p>
 
                         <div class="about__social">
                             <a href="https://www.linkedin.com/in/pablo-cardozo-84193b209" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
@@ -111,7 +110,7 @@
                     <div class="skills__box">
                         <span class="skills__name">Inglés Intermedio (Habla y escritura)</span>
                         <span class="skills__name">Italiano Básico</span>
-                        <span class="skills__name">Ingles Informático</span>
+                        <span class="skills__name">Inglés Informático</span>
                     </div> 
                         <div class="skills__img">
                             <img src="assets/img/estudiar_idiomas_en_el_extranjero.jpg" alt="">
@@ -125,7 +124,7 @@
                     <div class="skills__box">
                         <span class="skills__name">Primaria Completa (Escuela Carlos Pellegrini) (2006/2013)</span>
                         <span class="skills__name">Secundaria Completa (Escuela de Fruticultura y Enologia) (2013/2021)</span>
-                        <span class="skills__name">Cursando 2do Año de la Licenciatura en Ciencias de la Computacion (2022/Act)</span>
+                        <span class="skills__name">Cursando 2do Año de la Licenciatura en Ciencias de la Computacion (Universidad Nacional de San Juan) (2022/Actualidad)</span>
                     </div> 
             </section>
 
@@ -138,7 +137,7 @@
                         <img src="assets/img/FERLAB (1).jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">Laboratorio FerLab</a>
+                            <a href="https://laboratorioferlab.netlify.app/" class="portfolio__link-name">Laboratorio FerLab</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
@@ -152,28 +151,28 @@
                         <img src="assets/img/work3.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">Ver Detalles</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work4.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">Ver Detalles</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work5.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">Ver Detalles</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
                         <img src="assets/img/work6.jpg" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="#" class="portfolio__link-name">Ver Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -195,15 +194,15 @@
                         <span class="contact__text">San Juan, Argentina</span>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Nombre" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
+                            <input type="text" placeholder="Nombre" id="nombre" class="contact__input">
+                            <input type="mail" placeholder="Email" id="email" class="contact__input">
                         </div>
 
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
 
-                        <input type="submit" value="Enviar" class="contact__button">
+                        <input type="button" value="Enviar" id="btn-enviar" class="contact__button">
                     </form>
                 </div>
             </section>
@@ -220,7 +219,7 @@
                 <div class="footer__data">
                     <h2 class="footer__title">EXPLORE</h2>
                     <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#home" class="footer__link">Inicio</a></li>
                         <li><a href="#skills" class="footer__link">Conocimientos</a></li>
                         <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
                         <li><a href="#Contact" class="footer__link">Contacto</a></li>
@@ -236,11 +235,14 @@
                 </div>
             </div>
         </footer>
-
+        <!--SWEETALERT-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+        <script src="sweetalert2.all.min.js"></script>
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        
     </body>
 </html>

@@ -75,6 +75,49 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
+/**FORM BUTTON SUCCESS */
+const btn = document.getElementById("btn-enviar");
+const FuncionSweet = () => { const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+  
+  swalWithBootstrapButtons.fire({
+    title: 'Desea enviar el formulario?',
+    text: "Esto es irreversible!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Enviar!',
+    cancelButtonText: 'No, cancelar!',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Enviado!',
+        'Su formulario ha sido registrado.',
+        'success'
+      )
+    } else if (
+      /* Read more about handling dismissals below */
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        'Cancelado',
+        'Su formulario no ha sido enviado :)',
+        'error'
+      )
+    }
+  })}
+  btn.addEventListener('click', ()=>{
+              FuncionSweet()
+          })
 
-
-
+const emailVálido = email => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+          
+emailVálido('free@code@camp.org') // false
+emailVálido('quincy@freecodecamp.org') // true
