@@ -120,6 +120,9 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--first-color);
 }
+.table{
+    margin-top: 100px;
+}
 
 /*===== NAV =====*/
 .nav{
@@ -354,6 +357,7 @@ img{
 /* ===== FOOTER=====*/
 .footer{
     background-color: var(--dark-color);
+    margin-top: 1000px;
 }
 .footer__container{
     row-gap: 2rem;
